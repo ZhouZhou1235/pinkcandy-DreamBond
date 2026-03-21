@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://b3a2uikkao31l"]
+
+[ext_resource type="Script" uid="uid://cy28rlsbgrw8u" path="res://scripts/begin.gd" id="1_dtcj2"]
+
+[sub_resource type="Theme" id="Theme_upal7"]
+default_font_size = 24
+
+[node name="Begin" type="Control" unique_id=1162333205]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dtcj2")
+
+[node name="Title" type="Label" parent="." unique_id=1705110616]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 32.0
+offset_right = 640.0
+offset_bottom = 160.0
+theme_override_font_sizes/font_size = 48
+text = "梦境纽带"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Menu" type="VBoxContainer" parent="." unique_id=1572230945]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 160.0
+offset_right = 640.0
+offset_bottom = 448.0
+theme = SubResource("Theme_upal7")
+
+[node name="Play" type="Button" parent="Menu" unique_id=1529046050]
+layout_mode = 2
+text = "开始游戏"
+
+[node name="Restart" type="Button" parent="Menu" unique_id=373714772]
+visible = false
+layout_mode = 2
+text = "重新开始"
+
+[node name="Memory" type="Button" parent="Menu" unique_id=1863569722]
+visible = false
+layout_mode = 2
+text = "记忆相册"
+
+[node name="Exit" type="Button" parent="Menu" unique_id=1988310904]
+layout_mode = 2
+text = "退出"
+
+[connection signal="pressed" from="Menu/Exit" to="." method="_on_exit_pressed"]
