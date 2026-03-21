@@ -1,0 +1,13 @@
+..................
+............
+......
+[text_input text="你的名字" var="player_name"]
+性别
+- 雌
+	set {player_sex} = "female"
+- 雄
+	set {player_sex} = "male"
+do GLBOAL.get_dialogic_to_update_playerinfo()
+Player: 唔......
+Player: 我好像睡过头了
+Player: 出门走走 ouo

@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://bqnqhs5v8kppl"]
+
+[ext_resource type="Script" uid="uid://cqsurg7fvmfoa" path="res://scripts/player.gd" id="1_3li8b"]
+[ext_resource type="Texture2D" uid="uid://vybh6w7rbjpc" path="res://assets/player/小蓝狗默认_0001.png" id="2_mdl7e"]
+[ext_resource type="Texture2D" uid="uid://b0tp5g0m0nm6" path="res://assets/player/小蓝狗默认_0002.png" id="3_qu4a1"]
+[ext_resource type="Texture2D" uid="uid://bdkuxlxknghg2" path="res://assets/player/小蓝狗落下_0001.png" id="4_lkdrv"]
+[ext_resource type="Texture2D" uid="uid://c5qywhbp1xnrj" path="res://assets/player/小蓝狗落下_0002.png" id="5_p7iby"]
+[ext_resource type="Texture2D" uid="uid://c0tyexdjpxrq0" path="res://assets/player/小蓝狗跳跃_0001.png" id="6_0rnld"]
+[ext_resource type="Texture2D" uid="uid://qc0x2omjdn3o" path="res://assets/player/小蓝狗跳跃_0002.png" id="7_srp4u"]
+[ext_resource type="Texture2D" uid="uid://behb5vd18ctcx" path="res://assets/player/小蓝狗移动_0001.png" id="8_jfpux"]
+[ext_resource type="Texture2D" uid="uid://dsoym1x0blf3g" path="res://assets/player/小蓝狗移动_0002.png" id="9_61ith"]
+[ext_resource type="Texture2D" uid="uid://c6nuvmfe5i15d" path="res://assets/player/小蓝狗移动_0003.png" id="10_ebwui"]
+[ext_resource type="Texture2D" uid="uid://b62b4fu0fd8o3" path="res://assets/player/小蓝狗移动_0004.png" id="11_sfy4j"]
+[ext_resource type="Texture2D" uid="uid://c4uctbc2khid0" path="res://assets/player/小蓝狗移动_0005.png" id="12_gv3ic"]
+[ext_resource type="Texture2D" uid="uid://cnt17oafuty22" path="res://assets/player/小蓝狗移动_0006.png" id="13_b8lor"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_70d11"]
+radius = 32.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cw2d6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_mdl7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qu4a1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_lkdrv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_p7iby")
+}],
+"loop": false,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_0rnld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_srp4u")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_jfpux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_61ith")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ebwui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_sfy4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_gv3ic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_b8lor")
+}],
+"loop": true,
+"name": &"move",
+"speed": 5.0
+}]
+
+[node name="Player" type="CharacterBody2D" unique_id=1827669359]
+script = ExtResource("1_3li8b")
+
+[node name="Shape" type="CollisionShape2D" parent="." unique_id=1958359131]
+shape = SubResource("CircleShape2D_70d11")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1027911114]
+sprite_frames = SubResource("SpriteFrames_cw2d6")
+autoplay = "default"
+
+[node name="Camera" type="Camera2D" parent="." unique_id=737248988]
+zoom = Vector2(2, 2)
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
