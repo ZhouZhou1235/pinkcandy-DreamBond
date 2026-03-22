@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnt17oafuty22"
-path="res://.godot/imported/小蓝狗移动_0006.png-f612d2d6938ef4d93bac7d66c1472699.ctex"
+uid="uid://b0tp5g0m0nm6"
+path="res://.godot/imported/小蓝狗默认_0002.png-d8226dd2a2262fe8deeaaa0ed01a0a81.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/小蓝狗移动_0006.png"
-dest_files=["res://.godot/imported/小蓝狗移动_0006.png-f612d2d6938ef4d93bac7d66c1472699.ctex"]
+source_file="res://assets/frames/zhouzhou/小蓝狗默认_0002.png"
+dest_files=["res://.godot/imported/小蓝狗默认_0002.png-d8226dd2a2262fe8deeaaa0ed01a0a81.ctex"]
 
 [params]
 

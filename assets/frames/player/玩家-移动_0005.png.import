@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qc0x2omjdn3o"
-path="res://.godot/imported/小蓝狗跳跃_0002.png-0068b89121e74ccb7c1ab67fb2b0d346.ctex"
+uid="uid://c3tq0f7socm6e"
+path="res://.godot/imported/玩家-移动_0005.png-cf57d0fcfdbb61ea6674bd8ea60d4e06.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/小蓝狗跳跃_0002.png"
-dest_files=["res://.godot/imported/小蓝狗跳跃_0002.png-0068b89121e74ccb7c1ab67fb2b0d346.ctex"]
+source_file="res://assets/frames/player/玩家-移动_0005.png"
+dest_files=["res://.godot/imported/玩家-移动_0005.png-cf57d0fcfdbb61ea6674bd8ea60d4e06.ctex"]
 
 [params]
 

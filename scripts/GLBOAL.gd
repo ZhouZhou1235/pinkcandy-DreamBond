@@ -4,6 +4,8 @@ extends Node
 
 var save_path :String = OS.get_user_data_dir()+"/save.json"
 var save_dict :Dictionary
+var player_map_dialoguing = false
+@onready var Main :Node = self.get_node("/root/Main")
 
 # 加载存档
 func load_save():
@@ -37,15 +39,30 @@ func reset_save():
 		save_dict = default_dict
 		save_save()
 
-# 获取dialogic中玩家的信息更新存档
+# 获取dialogic中玩家信息更新存档
 func get_dialogic_to_update_playerinfo():
 	var player_name = Dialogic.VAR.get_variable("player_name")
 	var player_sex = Dialogic.VAR.get_variable("player_sex")
 	save_dict["player_name"] = player_name
 	save_dict["player_sex"] = player_sex
 
+# 为dialogic中玩家信息赋值
+func store_dialogic_vars_playerinfo():
+	Dialogic.VAR.set_variable("player_name",save_dict["player_name"])
+	Dialogic.VAR.set_variable("player_sex",save_dict["player_sex"])
+
+# 故事开始
+func story_start():
+	GLBOAL.save_dict["step"] = "first_day"
+	Main.go_to_map("PinkCandyPark",[0,0])
+
+# 设置玩家在地图中是否在对话
+func set_player_map_dialoguing(boolen:bool):
+	player_map_dialoguing = boolen
+
 func _ready() -> void:
 	load_save()
+	store_dialogic_vars_playerinfo()
 
 func _exit_tree() -> void:
 	save_save()

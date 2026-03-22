@@ -1,0 +1,42 @@
+do GLBOAL.set_player_map_dialoguing(true)
+Player: 嗨，你好，我是旅者{player_name}。这是哪里呀？
+ZhouZhou: ......a 哦你好你好
+ZhouZhou: 这里是粉糖园，我叫周周。欢迎新旅客的到来！
+Player: 附近有吃东西的地方吗？我有点饿了。
+ZhouZhou: 哦，右边继续往前走有一个蛋糕店，店主是福德，或者......我从屋子里拿点吃的给你。
+- 向周周要一些吃的
+	ZhouZhou: 可以呀，你喜欢吃什么？
+	- 曲奇饼干
+	- 蓝莓
+	- 玫瑰糖
+	ZhouZhou: 好哦，等我一下......
+	[wait time="3.0"]
+	if {player_sex} == "female":
+		ZhouZhou: 我用盒子装上了你方便拿走
+		Player: 谢谢你
+		ZhouZhou: ......嗯
+		ZhouZhou: 旅行愉快！ \:)
+	else:
+		ZhouZhou: 给
+		Player: 谢谢你
+- 请求到周周家做客
+	if {player_sex} == "female":
+		Player: 好热情的犬先生，我做客一会怎么样？
+		ZhouZhou: 哎？！
+		ZhouZhou: 但是我们才刚刚认识几分钟......
+		- 坚持请求
+			Player: 我在路上消耗很多精力有点累了，同时又遇到乐于助犬的同类，如果能休息一会我很感激的。
+			ZhouZhou: ......那进来吧
+			Player: 再次感谢~！
+		- 离开
+			Player: 不好意思打扰到周周了
+			Player: 我去你说的蛋糕店看看
+			ZhouZhou: 没关系，再见。
+	else:
+		ZhouZhou: 啊......我们才刚刚认识几分钟，可能不太合适吧。
+		ZhouZhou: 想来我家做客可以明天哦
+		Player: 哦哦行，再见。
+- 离开
+	Player: 那我去蛋糕店看看吧
+	ZhouZhou: 再见
+do GLBOAL.set_player_map_dialoguing(false)

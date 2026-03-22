@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b62b4fu0fd8o3"
-path="res://.godot/imported/小蓝狗移动_0004.png-11f460cddf04a29c200192325cd5d8f1.ctex"
+uid="uid://cnw4oolaiu1yv"
+path="res://.godot/imported/玩家-落下_0001.png-2c89b6b1047313cdd3707b5a981a870d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/小蓝狗移动_0004.png"
-dest_files=["res://.godot/imported/小蓝狗移动_0004.png-11f460cddf04a29c200192325cd5d8f1.ctex"]
+source_file="res://assets/frames/player/玩家-落下_0001.png"
+dest_files=["res://.godot/imported/玩家-落下_0001.png-2c89b6b1047313cdd3707b5a981a870d.ctex"]
 
 [params]
 

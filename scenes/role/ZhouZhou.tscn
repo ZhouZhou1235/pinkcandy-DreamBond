@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dba6yequ0dnr1"]
+
+[ext_resource type="Texture2D" uid="uid://vybh6w7rbjpc" path="res://assets/frames/zhouzhou/小蓝狗默认_0001.png" id="1_r0fu0"]
+[ext_resource type="Texture2D" uid="uid://b0tp5g0m0nm6" path="res://assets/frames/zhouzhou/小蓝狗默认_0002.png" id="2_klcxo"]
+[ext_resource type="Script" uid="uid://cvte2gh0xe6vj" path="res://scenes/role/zhou_zhou.gd" id="3_klcxo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_24swk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_r0fu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_klcxo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_24swk"]
+radius = 64.0
+
+[node name="ZhouZhou" type="AnimatedSprite2D" unique_id=1875456365]
+sprite_frames = SubResource("SpriteFrames_24swk")
+autoplay = "default"
+script = ExtResource("3_klcxo")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=335168403]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=949240903]
+shape = SubResource("CircleShape2D_24swk")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

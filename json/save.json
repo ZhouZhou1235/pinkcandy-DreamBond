@@ -1,6 +1,9 @@
 {
-    "step":"start",
     "time":null,
     "player_name":"",
-    "player_sex":""
+    "player_sex":"",
+    "step":"start",
+    "map":"",
+    "position":[0,0],
+    "bag":[]
 }

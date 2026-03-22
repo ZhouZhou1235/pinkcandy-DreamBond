@@ -1,13 +1,18 @@
-..................
-............
-......
-[text_input text="你的名字" var="player_name"]
+[wait time="1.0"]
+[text_input text="你的名字" var="player_name" placeholder="匿名" default="匿名"]
 性别
 - 雌
 	set {player_sex} = "female"
 - 雄
 	set {player_sex} = "male"
 do GLBOAL.get_dialogic_to_update_playerinfo()
+[wait time="1.0"]
+......
+{player_name}，你是来自远方的旅行者。
+你来到了粉糖园，和当地的小兽认识一下吧。
+[wait time="1.0"]
 Player: 唔......
-Player: 我好像睡过头了
-Player: 出门走走 ouo
+Player: 晚上熬夜，我好像睡过头了。
+Player: 收拾东西出发！
+[wait time="2.0"]
+do GLBOAL.story_start()

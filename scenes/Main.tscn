@@ -59,18 +59,8 @@ text = "设置"
 layout_mode = 2
 text = "退出"
 
-[node name="View" type="Node2D" parent="." unique_id=1647317589]
-
-[node name="Map" type="Node2D" parent="." unique_id=1690837761]
-
-[node name="Curtain" type="CanvasLayer" parent="." unique_id=32642714]
-visible = false
-
-[node name="Cover" type="ColorRect" parent="Curtain" unique_id=1812755091]
-offset_right = 680.0
-offset_bottom = 480.0
-
-[node name="Animation" type="AnimationPlayer" parent="Curtain" unique_id=1563713468]
+[node name="World" type="Node2D" parent="." unique_id=1647317589]
 
 [connection signal="pressed" from="Begin/Menu/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Begin/Menu/Continue" to="." method="_on_continue_pressed"]
 [connection signal="pressed" from="Begin/Menu/Exit" to="." method="_on_exit_pressed"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsoym1x0blf3g"
-path="res://.godot/imported/小蓝狗移动_0002.png-48ca918fc7af60b1934761cd0fb52cd3.ctex"
+uid="uid://d2pixic5fmgms"
+path="res://.godot/imported/玩家-移动_0004.png-a13689b60386a598a8d42c84bfae567b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/小蓝狗移动_0002.png"
-dest_files=["res://.godot/imported/小蓝狗移动_0002.png-48ca918fc7af60b1934761cd0fb52cd3.ctex"]
+source_file="res://assets/frames/player/玩家-移动_0004.png"
+dest_files=["res://.godot/imported/玩家-移动_0004.png-a13689b60386a598a8d42c84bfae567b.ctex"]
 
 [params]
 
