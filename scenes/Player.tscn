@@ -76,6 +76,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Theme" id="Theme_lkdrv"]
+default_font_size = 24
+
 [node name="Player" type="CharacterBody2D" unique_id=1827669359]
 z_index = 1
 script = ExtResource("1_3li8b")
@@ -92,3 +95,12 @@ autoplay = "default"
 zoom = Vector2(2, 2)
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
+
+[node name="Cover" type="CanvasLayer" parent="." unique_id=1158303007]
+
+[node name="Items" type="ItemList" parent="Cover" unique_id=1171242110]
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 256.0
+offset_bottom = 320.0
+theme = SubResource("Theme_lkdrv")

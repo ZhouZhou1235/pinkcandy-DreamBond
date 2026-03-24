@@ -1,4 +1,4 @@
 extends Node2D
 
 func _ready() -> void:
-	Dialogic.start("timeline1-start")
+	Dialogic.start("timeline1")

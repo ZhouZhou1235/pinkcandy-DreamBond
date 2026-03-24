@@ -32,13 +32,6 @@ func save_save():
 	else:
 		return false
 
-# 重置存档
-func reset_save():
-	var default_dict = JSON.parse_string(FileAccess.get_file_as_string("res://json/save.json"))
-	if default_dict:
-		save_dict = default_dict
-		save_save()
-
 # 获取dialogic中玩家信息更新存档
 func get_dialogic_to_update_playerinfo():
 	var player_name = Dialogic.VAR.get_variable("player_name")
@@ -59,6 +52,31 @@ func story_start():
 # 设置玩家在地图中是否在对话
 func set_player_map_dialoguing(boolen:bool):
 	player_map_dialoguing = boolen
+
+# 添加事件
+func add_event(event:String):
+	var list :Array = GLBOAL.save_dict["events"]
+	if event in list: return
+	list.push_back(event)
+	GLBOAL.save_dict["events"] = list
+
+# 添加物品
+func add_item(item:String):
+	var list :Array = GLBOAL.save_dict["items"]
+	list.push_back(item)
+	GLBOAL.save_dict["items"] = list
+
+# 在数值中寻找元素
+func find_element_in_array(list:Array,e:Variant):
+	for i in len(list):
+		if list[i]==e:
+			return i
+	return -1
+
+# 更新玩家物品栏UI
+func update_player_items_ui():
+	if Main:
+		Main.update_player_items_ui()
 
 func _ready() -> void:
 	load_save()

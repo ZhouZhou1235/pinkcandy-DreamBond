@@ -1,0 +1,6 @@
+do GLBOAL.set_player_map_dialoguing(true)
+ZhouZhou: 怎么又回来啦？
+ZhouZhou: ......
+方向键左右移动 空格跳跃
+Z键呼出对话 O键远望 Q键显示物品
+do GLBOAL.set_player_map_dialoguing(false)

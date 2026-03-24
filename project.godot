@@ -34,13 +34,11 @@ directories/dch_directory={
 "ZhouZhou": "res://dialog-system/characters/ZhouZhou.dch"
 }
 directories/dtl_directory={
-"timeline1-start": "res://dialog-system/timelines/timeline1-start.dtl",
-"timeline2-first_meet_zhou": "res://dialog-system/timelines/timeline2-first_meet_zhou.dtl"
+"timeline1": "res://dialog-system/timelines/timeline1.dtl",
+"timeline2": "res://dialog-system/timelines/timeline2.dtl",
+"timeline3": "res://dialog-system/timelines/timeline3.dtl"
 }
-layout/style_directory={
-"": "res://dialog-system/dialog-style.tres",
-"dialog-style": "res://dialog-system/dialog-style.tres"
-}
+layout/style_directory={}
 glossary/default_case_sensitive=true
 variables={
 "player_name": "",
@@ -113,7 +111,7 @@ dialogic_default_action={
 }
 game_camera_zoom={
 "deadzone": 0.2,
-"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":65,"key_label":0,"unicode":97,"location":0,"echo":false,"script":null)
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":79,"key_label":0,"unicode":111,"location":0,"echo":false,"script":null)
 ]
 }
 game_dialog={
@@ -124,6 +122,11 @@ game_dialog={
 game_jump={
 "deadzone": 0.2,
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":32,"key_label":0,"unicode":32,"location":0,"echo":false,"script":null)
+]
+}
+game_showitems={
+"deadzone": 0.2,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":81,"key_label":0,"unicode":113,"location":0,"echo":false,"script":null)
 ]
 }
 

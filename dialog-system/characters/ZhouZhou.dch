@@ -10,23 +10,13 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "小蓝狗1",
+&"default_portrait": "",
 &"description": "小蓝狗周周
 ",
 &"display_name": "周周",
 &"mirror": false,
 &"nicknames": ["周周"],
 &"offset": Vector2(0, 0),
-&"portraits": {
-"小蓝狗1": {
-"export_overrides": {
-"image": "\"res://assets/roles/zhouzhou/小蓝狗1.png\""
-},
-"mirror": false,
-"offset": Vector2(0, 0),
-"scale": 1,
-"scene": ""
-}
-},
+&"portraits": {},
 &"scale": 1.0
 }

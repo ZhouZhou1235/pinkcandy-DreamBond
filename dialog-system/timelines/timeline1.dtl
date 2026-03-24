@@ -16,3 +16,4 @@ Player: 晚上熬夜，我好像睡过头了。
 Player: 收拾东西出发！
 [wait time="2.0"]
 do GLBOAL.story_start()
+do GLBOAL.add_event("timeline1")
